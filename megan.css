@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'robot', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #ffc246;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --black: #000000;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+    
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+
+
+}
+
+/* ======Start Header Area===== */
+
+.nav-item a strong{
+    padding-left: 30px;
+    color: #000000;
+}
+
+.nav-item a:hover strong{
+    color: var(--primary-color);
+}
+
+.social-icons a i{
+    padding-left: 20px;
+    color: #000000;
+    
+}
+
+.social-icons a:hover i{
+    color: var(--primary-color);
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+
+/* =======Hero Section======= */
+
+.hero-container {
+    max-width: 100%;
+    height: 800px;
+    margin-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section{
+    overflow: hidden;
+}
+
+/* ========End Hero Section======= */
+
+/* =======About Area===== */
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3.5rem;
+    padding-bottom: 2.5rem;
+
+}
+
+.left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img-container {
+    overflow: hidden;
+    box-shadow: 0ps 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.img {
+    height: 460px;
+    width: 100%;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 51vh;
+    animation: SliedFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes SliedFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.aboutus {
+    display: flex;
+    color: var(--gray);
+    justify-content: start;
+    font-size: 20px;
+}
+
+.about-title {
+    display: flex;
+    text-align: start;
+    font-size: 40px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.about-title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.about-desc {
+    text-align: start;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: var(--gray);
+    padding-top: 25px;
+}
+
+.button {
+    text-align: start;
+    padding-top: 25px;
+    
+}
+
+.about-button {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    color: var(--background-color);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.about-button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 2px solid yellow;
+}
+/* =========End About Area====== */
+
+/* =======Slider Start Here========= */
+
+.subtitle{
+    font-size: 20px;
+    text-align: start;
+    color: var(--gray);
+}
+
+.title{
+    position: relative;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.button-area{
+    padding-left: 2.5rem;
+    padding-top: 10px;
+}
+
+.feature-project-two-single-item__content a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.feature-project-two-single-item {
+    padding: 10px;
+    
+}
+
+.feature-project-two-single-item__image{
+    overflow: hidden;
+}
+
+.feature-project-two-single-item:hover img {
+    box-shadow: 1px px 5px black;
+    transform: scale(1.1);
+}
+
+.feature-project-two-single-item__image img {
+    width: 100%; 
+    transition: all 0.3s linear;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.feature-project-two-single-item__content {
+    background-color: var(--background-color);
+    padding: 15px 20px;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+.feature-project-two-single-item__content:hover{
+    background-color: var(--primary-color);
+}
+
+.swiper-pagination {
+    position: static;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    width: auto;
+    z-index: 7;
+    line-height: 1;
+}
+
+.slider-buttton {
+    position: relative !important;
+}
+
+.slider-buttton span {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+
+/* ======Award section======= */
+
+
+.container-img {
+    margin: 60px;
+}
+
+.awards-title h1 {
+    font-weight: bold;
+}
+
+.award-item img {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ======Testimonal Area====== */
+
+.testi-heading {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.feature-project-two-single-item1 {
+    padding: 1rem;
+}
+
+.feature-project-two-single-item__image1{
+    overflow: hidden;
+    border-top-left-radius: 50px;
+}
+
+.feature-project-two-single-item1:hover img {
+    transform: scale(1.1);
+}
+
+.feature-project-two-single-item__image1 img {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.testiminal-feature-project-two-single-item__content {
+    background-color: rgb(204, 200, 200);
+    padding: 15px 20px;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-bottom-right-radius: 30px;
+}
+
+.testiminal-feature-project-two-single-item__content:hover {
+    background-color: var(--primary-color);
+}
+
+.testiminal-feature-project-two-single-item__content a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.agent-details a {
+    font-size: 16px;
+    color: #555;
+}
+/* =================End Testimonal Area======== */
+
+
+
+/* =============Footer========== */
+
+.bd-footer{
+    background-color: var(--primary-color);
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+i{
+    color: white;
+}
+
+.footer-link a:hover i {
+    color: #000000;
+}
+
+
+/* =================================ABOUT-PAGR SECTION================================= */
+
+.banner2 {
+    position: relative;
+    background-size: cover;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(9, 58, 110, 0.4), rgba(0, 0, 0, 0.4)), url(asset/img/banner/banner7.jpg)};
+
+    
+
+.vision-mission {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.feature-project-two-single-item__content3{
+    box-shadow: 0px 0px 2px;
+}
+
+/* ===============End About Section==================  */
+
+
+/* =============================Our Project Start========================== */
+.feature-project-two-single-item {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 400ms all ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/* =============================Our Project End========================== */
+
+/* =============================================Contact Us===================================== */
+
+.contact-us-title h4{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    padding-bottom: 13px;
+}
+
+.contact-us-title h4::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: #ddd;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.button-submit .btn{
+    background-color: var(--primary-color);
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1220px) {
+    .hero-container {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    /* About Area */
+    .about-content{
+        padding: 4.5rem;
+    }
+    /* Slider Area in Home-Page*/
+    .button-area{
+        padding-left: 1.7rem;
+    }
+
+    /* =============================Our-Project Page=================== */
+    .container{
+        max-width: 1220px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-container {
+        height: 500px;
+    }
+
+    .banner-img {
+        object-fit: contain;
+    }
+
+    /* About Area */
+    .about-content{
+        padding: 30px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .left-content-area{
+        height: 100%;
+    }
+
+    .about-right{
+        height: 100%;
+    }
+
+    .about-title{
+        font-size: 1.9rem;
+    }
+
+    .about-desc{
+        font-size: 19.5px;
+    }
+
+    /* Slider Area in Home-Page */
+    .featured-project-two-slider-area{
+        padding-top: 40px;
+    }
+
+    /* Award Area */
+    .awards{
+        padding-top: 13px;
+    }
+
+    .award-container{
+        padding-left: 0px;
+    }
+   /* ==================================About-Page========================= */
+   
+ 
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        height: 400px;
+    }
+    /* About Area */
+    .about-content{
+        padding-bottom: 3rem;
+        padding-bottom: 0px;
+    }
+    .aboutus{
+        padding-top: 10px;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+    .about-desc{
+        font-size: 1.2rem;
+    }
+
+    /* Slider Area in Home-Page */
+    .featured-project-two-slider-area{
+        padding-top: 2.5rem;
+        
+    }
+
+    /* Awards Area */
+    .awards{
+        padding-bottom: 0px;
+    }
+    .award-image img{
+        padding-bottom: 20px;
+    }
+
+
+    /* =============================About-Page============================== */
+    
+    .vision-mission{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-container {
+        height: 300px;
+    }
+
+    .banner-img {
+        object-fit: cover;
+    }
+
+    /* About Area */
+    .aboutus{
+        font-size: 17px;
+        letter-spacing: 3px;
+       }
+    .about-title{
+        font-size: 28px;
+    }
+    .about-desc{
+        padding-top: 18px;
+        font-size: 16px;
+    }
+    .button{
+        padding-top: 1rem;
+    }
+
+    /* Slider Area in Home-Page */
+    .subtitle{
+        font-size: 17px;
+    }
+   .title{
+    font-size: 20px;
+    padding-top: 16px;
+   }
+
+   .feature-project-two-single-item__content a{
+    font-size: 16px;
+   }
+
+   /* .Award Area */
+   .awards{
+    padding-top: 0px;
+    background-color: var(--light-gray);
+   }
+
+   /* ========================About-Page=================================== */
+   .mission{
+    padding-bottom: 15px;
+   }
+
+   /* =============================Our-Project Page=============================== */
+
+  
+
+}
+
+@media screen and (max-width: 480px){
+    /* award Area */
+    .aboutus{
+        padding-top: 5px;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .about-title{
+        font-size: 20px;
+    }
+
+    .about-desc{
+        font-size: 15px;
+    }
+
+    .about-button{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Slider Area in Home-Page */
+    .section-title-area{
+        padding-left: 1.1rem;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+    .title{
+        padding-top: 0px;
+    }
+    .button-area{
+        text-align: start;
+        padding: initial;
+    }
+}
+
+@media screen and (max-width: 320px){
+    /* About Area */
+   .left-content{
+    display: none;
+   }
+
+   .about-content {
+    padding: 1.5rem;
+   }
+
+   .aboutus{
+    padding-top: 0px;
+    font-size: 13px;
+    letter-spacing: 2px;
+   }
+
+   .about-title{
+    font-size: calc(1.1rem);
+   }
+
+   .about-desc{
+    line-height: 1.5;
+   }
+
+   .button{
+    padding-top: 12px;
+   }
+   
+   .about-button{
+    font-size: 10px;
+    letter-spacing: 1px;
+   }
+
+   /* ==========================================Our-Projects Page====================== */
+   
+}
